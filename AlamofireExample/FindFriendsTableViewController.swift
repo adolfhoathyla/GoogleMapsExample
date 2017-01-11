@@ -9,9 +9,19 @@
 import UIKit
 
 class FindFriendsTableViewController: UITableViewController {
+    
+    var users = [User]()
+    let spinner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        spinner.hidesWhenStopped = true
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: spinner)
+        tableView.tableFooterView = UIView()
+        
+        reloadUsers()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,24 +38,23 @@ class FindFriendsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return users.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "USER_IDENTIFIER", for: indexPath)
+
+        cell.textLabel?.text = users[indexPath.row].name
+        cell.detailTextLabel?.text = users[indexPath.row].address
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,5 +100,19 @@ class FindFriendsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func reloadUsers(_ sender: UIBarButtonItem) {
+        reloadUsers()
+    }
+    
+    private func reloadUsers() {
+        self.spinner.startAnimating()
+        ServerHelper.getAllUsers { (users) in
+            if let _ = users {
+                self.users = users!
+                self.tableView.reloadData()
+                self.spinner.stopAnimating()
+            }
+        }
+    }
 
 }

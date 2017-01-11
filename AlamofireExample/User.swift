@@ -29,4 +29,6 @@ class User: NSObject {
         self.address = address
         self.coordinates = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
+    
+    override init() { }
 }
