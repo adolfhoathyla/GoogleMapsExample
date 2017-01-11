@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1605437B1E26B070009E0779 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1605437A1E26B070009E0779 /* Alamofire.framework */; };
+		1605437D1E26B164009E0779 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1605437A1E26B070009E0779 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1610FA041E21832E007D3019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1610FA031E21832E007D3019 /* AppDelegate.swift */; };
 		1610FA091E21832E007D3019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1610FA071E21832E007D3019 /* Main.storyboard */; };
 		1610FA0B1E21832E007D3019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1610FA0A1E21832E007D3019 /* Assets.xcassets */; };
@@ -35,7 +37,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1605437C1E26B100009E0779 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1605437D1E26B164009E0779 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1605437A1E26B070009E0779 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		1610FA001E21832E007D3019 /* AlamofireExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1610FA031E21832E007D3019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1610FA081E21832E007D3019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1605437B1E26B070009E0779 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160543791E26B070009E0779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1605437A1E26B070009E0779 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1610F9F71E21832E007D3019 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,7 @@
 				1610FA171E21832E007D3019 /* AlamofireExampleTests */,
 				1610FA221E21832E007D3019 /* AlamofireExampleUITests */,
 				1610FA011E21832E007D3019 /* Products */,
+				160543791E26B070009E0779 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +191,7 @@
 				1610F9FC1E21832E007D3019 /* Sources */,
 				1610F9FD1E21832E007D3019 /* Frameworks */,
 				1610F9FE1E21832E007D3019 /* Resources */,
+				1605437C1E26B100009E0779 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -448,6 +475,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MZ982Z982H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AlamofireExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AA.AlamofireExample;
@@ -461,6 +492,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MZ982Z982H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AlamofireExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AA.AlamofireExample;
