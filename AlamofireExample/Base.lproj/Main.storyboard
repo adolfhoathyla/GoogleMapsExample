@@ -12,28 +12,28 @@
         <!--Users-->
         <scene sceneID="ZLY-Lu-cnY">
             <objects>
-                <tableViewController id="Dyf-bg-a5F" customClass="FindFriendsTableViewController" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Dyf-bg-a5F" customClass="FindFriendsTableViewController" customModule="GoogleMapsExample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2nn-iO-dRn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="USER_IDENTIFIER" textLabel="Abo-N6-dsW" detailTextLabel="FnI-tS-8OD" style="IBUITableViewCellStyleSubtitle" id="Ay2-6M-y5E">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="USER_IDENTIFIER" textLabel="Abo-N6-dsW" detailTextLabel="FnI-tS-8OD" style="IBUITableViewCellStyleSubtitle" id="Ay2-6M-y5E">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ay2-6M-y5E" id="7yv-cD-hPG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Abo-N6-dsW">
-                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FnI-tS-8OD">
-                                            <rect key="frame" x="15" y="25.5" width="33" height="14.5"/>
+                                            <rect key="frame" x="15" y="25" width="33" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -55,16 +55,37 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="bn7-Vh-NIw" kind="show" identifier="GO_TO_GOOGLEMAP" id="fCM-u5-tcf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5X-mx-mCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="415" y="80"/>
         </scene>
+        <!--User Location View Controller-->
+        <scene sceneID="nvJ-sU-sX6">
+            <objects>
+                <viewController id="bn7-Vh-NIw" customClass="UserLocationViewController" customModule="GoogleMapsExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tZm-F1-1kE"/>
+                        <viewControllerLayoutGuide type="bottom" id="WY6-PG-vEc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="heW-M0-7UF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8R-8N-pP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="80"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="iuc-C9-Z5d">
             <objects>
                 <navigationController id="LY1-7K-VHF" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Vx-Qy-g5F">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6Vx-Qy-g5F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
