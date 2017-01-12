@@ -43,7 +43,7 @@ class ServerHelper: NSObject {
                         if let addressAux = userDictionary.value(forKey: "address") as? String {
                             user.address = addressAux
                         }
-                        if let latitudeAux = userDictionary.value(forKey: "latitude") as? Double, let longitudeAux = userDictionary.value(forKey: "longitude") as? Double {
+                        if let latitudeAux = userDictionary.value(forKey: "latitude") as? CLLocationDegrees, let longitudeAux = userDictionary.value(forKey: "longitude") as? CLLocationDegrees {
                             user.coordinates = CLLocationCoordinate2D(latitude: latitudeAux, longitude: longitudeAux)
                         }
                         users.append(user)

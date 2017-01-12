@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1610F9FF1E21832E007D3019"
-               BuildableName = "AlamofireExample.app"
-               BlueprintName = "AlamofireExample"
-               ReferencedContainer = "container:AlamofireExample.xcodeproj">
+               BuildableName = "GoogleMapsExample.app"
+               BlueprintName = "GoogleMapsExample"
+               ReferencedContainer = "container:GoogleMapsExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1610FA131E21832E007D3019"
-               BuildableName = "AlamofireExampleTests.xctest"
-               BlueprintName = "AlamofireExampleTests"
-               ReferencedContainer = "container:AlamofireExample.xcodeproj">
+               BuildableName = "GoogleMapsExampleTests.xctest"
+               BlueprintName = "GoogleMapsExampleTests"
+               ReferencedContainer = "container:GoogleMapsExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1610FA1E1E21832E007D3019"
-               BuildableName = "AlamofireExampleUITests.xctest"
-               BlueprintName = "AlamofireExampleUITests"
-               ReferencedContainer = "container:AlamofireExample.xcodeproj">
+               BuildableName = "GoogleMapsExampleUITests.xctest"
+               BlueprintName = "GoogleMapsExampleUITests"
+               ReferencedContainer = "container:GoogleMapsExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1610F9FF1E21832E007D3019"
-            BuildableName = "AlamofireExample.app"
-            BlueprintName = "AlamofireExample"
-            ReferencedContainer = "container:AlamofireExample.xcodeproj">
+            BuildableName = "GoogleMapsExample.app"
+            BlueprintName = "GoogleMapsExample"
+            ReferencedContainer = "container:GoogleMapsExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1610F9FF1E21832E007D3019"
-            BuildableName = "AlamofireExample.app"
-            BlueprintName = "AlamofireExample"
-            ReferencedContainer = "container:AlamofireExample.xcodeproj">
+            BuildableName = "GoogleMapsExample.app"
+            BlueprintName = "GoogleMapsExample"
+            ReferencedContainer = "container:GoogleMapsExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1610F9FF1E21832E007D3019"
-            BuildableName = "AlamofireExample.app"
-            BlueprintName = "AlamofireExample"
-            ReferencedContainer = "container:AlamofireExample.xcodeproj">
+            BuildableName = "GoogleMapsExample.app"
+            BlueprintName = "GoogleMapsExample"
+            ReferencedContainer = "container:GoogleMapsExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

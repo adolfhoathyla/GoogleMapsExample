@@ -52,16 +52,16 @@
 
 /* Begin PBXFileReference section */
 		1605437A1E26B070009E0779 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		1610FA001E21832E007D3019 /* AlamofireExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1610FA001E21832E007D3019 /* GoogleMapsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1610FA031E21832E007D3019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1610FA081E21832E007D3019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1610FA0A1E21832E007D3019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1610FA0D1E21832E007D3019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1610FA0F1E21832E007D3019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1610FA141E21832E007D3019 /* AlamofireExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1610FA141E21832E007D3019 /* GoogleMapsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMapsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1610FA181E21832E007D3019 /* AlamofireExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExampleTests.swift; sourceTree = "<group>"; };
 		1610FA1A1E21832E007D3019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1610FA1F1E21832E007D3019 /* AlamofireExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1610FA1F1E21832E007D3019 /* GoogleMapsExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMapsExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1610FA231E21832E007D3019 /* AlamofireExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExampleUITests.swift; sourceTree = "<group>"; };
 		1610FA251E21832E007D3019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167E78B71E22AFC0009C4848 /* FindFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsTableViewController.swift; sourceTree = "<group>"; };
@@ -106,9 +106,9 @@
 		1610F9F71E21832E007D3019 = {
 			isa = PBXGroup;
 			children = (
-				1610FA021E21832E007D3019 /* AlamofireExample */,
-				1610FA171E21832E007D3019 /* AlamofireExampleTests */,
-				1610FA221E21832E007D3019 /* AlamofireExampleUITests */,
+				1610FA021E21832E007D3019 /* GoogleMapsExample */,
+				1610FA171E21832E007D3019 /* GoogleMapsExampleTests */,
+				1610FA221E21832E007D3019 /* GoogleMapsExampleUITests */,
 				1610FA011E21832E007D3019 /* Products */,
 				160543791E26B070009E0779 /* Frameworks */,
 			);
@@ -117,14 +117,14 @@
 		1610FA011E21832E007D3019 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1610FA001E21832E007D3019 /* AlamofireExample.app */,
-				1610FA141E21832E007D3019 /* AlamofireExampleTests.xctest */,
-				1610FA1F1E21832E007D3019 /* AlamofireExampleUITests.xctest */,
+				1610FA001E21832E007D3019 /* GoogleMapsExample.app */,
+				1610FA141E21832E007D3019 /* GoogleMapsExampleTests.xctest */,
+				1610FA1F1E21832E007D3019 /* GoogleMapsExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1610FA021E21832E007D3019 /* AlamofireExample */ = {
+		1610FA021E21832E007D3019 /* GoogleMapsExample */ = {
 			isa = PBXGroup;
 			children = (
 				167E78BD1E22B12D009C4848 /* View */,
@@ -134,24 +134,27 @@
 				1610FA0A1E21832E007D3019 /* Assets.xcassets */,
 				1610FA0F1E21832E007D3019 /* Info.plist */,
 			);
+			name = GoogleMapsExample;
 			path = AlamofireExample;
 			sourceTree = "<group>";
 		};
-		1610FA171E21832E007D3019 /* AlamofireExampleTests */ = {
+		1610FA171E21832E007D3019 /* GoogleMapsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
 				1610FA181E21832E007D3019 /* AlamofireExampleTests.swift */,
 				1610FA1A1E21832E007D3019 /* Info.plist */,
 			);
+			name = GoogleMapsExampleTests;
 			path = AlamofireExampleTests;
 			sourceTree = "<group>";
 		};
-		1610FA221E21832E007D3019 /* AlamofireExampleUITests */ = {
+		1610FA221E21832E007D3019 /* GoogleMapsExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
 				1610FA231E21832E007D3019 /* AlamofireExampleUITests.swift */,
 				1610FA251E21832E007D3019 /* Info.plist */,
 			);
+			name = GoogleMapsExampleUITests;
 			path = AlamofireExampleUITests;
 			sourceTree = "<group>";
 		};
@@ -184,9 +187,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1610F9FF1E21832E007D3019 /* AlamofireExample */ = {
+		1610F9FF1E21832E007D3019 /* GoogleMapsExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1610FA281E21832E007D3019 /* Build configuration list for PBXNativeTarget "AlamofireExample" */;
+			buildConfigurationList = 1610FA281E21832E007D3019 /* Build configuration list for PBXNativeTarget "GoogleMapsExample" */;
 			buildPhases = (
 				1610F9FC1E21832E007D3019 /* Sources */,
 				1610F9FD1E21832E007D3019 /* Frameworks */,
@@ -197,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = AlamofireExample;
+			name = GoogleMapsExample;
 			productName = AlamofireExample;
-			productReference = 1610FA001E21832E007D3019 /* AlamofireExample.app */;
+			productReference = 1610FA001E21832E007D3019 /* GoogleMapsExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1610FA131E21832E007D3019 /* AlamofireExampleTests */ = {
+		1610FA131E21832E007D3019 /* GoogleMapsExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1610FA2B1E21832E007D3019 /* Build configuration list for PBXNativeTarget "AlamofireExampleTests" */;
+			buildConfigurationList = 1610FA2B1E21832E007D3019 /* Build configuration list for PBXNativeTarget "GoogleMapsExampleTests" */;
 			buildPhases = (
 				1610FA101E21832E007D3019 /* Sources */,
 				1610FA111E21832E007D3019 /* Frameworks */,
@@ -215,14 +218,14 @@
 			dependencies = (
 				1610FA161E21832E007D3019 /* PBXTargetDependency */,
 			);
-			name = AlamofireExampleTests;
+			name = GoogleMapsExampleTests;
 			productName = AlamofireExampleTests;
-			productReference = 1610FA141E21832E007D3019 /* AlamofireExampleTests.xctest */;
+			productReference = 1610FA141E21832E007D3019 /* GoogleMapsExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1610FA1E1E21832E007D3019 /* AlamofireExampleUITests */ = {
+		1610FA1E1E21832E007D3019 /* GoogleMapsExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1610FA2E1E21832E007D3019 /* Build configuration list for PBXNativeTarget "AlamofireExampleUITests" */;
+			buildConfigurationList = 1610FA2E1E21832E007D3019 /* Build configuration list for PBXNativeTarget "GoogleMapsExampleUITests" */;
 			buildPhases = (
 				1610FA1B1E21832E007D3019 /* Sources */,
 				1610FA1C1E21832E007D3019 /* Frameworks */,
@@ -233,9 +236,9 @@
 			dependencies = (
 				1610FA211E21832E007D3019 /* PBXTargetDependency */,
 			);
-			name = AlamofireExampleUITests;
+			name = GoogleMapsExampleUITests;
 			productName = AlamofireExampleUITests;
-			productReference = 1610FA1F1E21832E007D3019 /* AlamofireExampleUITests.xctest */;
+			productReference = 1610FA1F1E21832E007D3019 /* GoogleMapsExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +270,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1610F9FB1E21832E007D3019 /* Build configuration list for PBXProject "AlamofireExample" */;
+			buildConfigurationList = 1610F9FB1E21832E007D3019 /* Build configuration list for PBXProject "GoogleMapsExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -280,9 +283,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1610F9FF1E21832E007D3019 /* AlamofireExample */,
-				1610FA131E21832E007D3019 /* AlamofireExampleTests */,
-				1610FA1E1E21832E007D3019 /* AlamofireExampleUITests */,
+				1610F9FF1E21832E007D3019 /* GoogleMapsExample */,
+				1610FA131E21832E007D3019 /* GoogleMapsExampleTests */,
+				1610FA1E1E21832E007D3019 /* GoogleMapsExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -347,12 +350,12 @@
 /* Begin PBXTargetDependency section */
 		1610FA161E21832E007D3019 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1610F9FF1E21832E007D3019 /* AlamofireExample */;
+			target = 1610F9FF1E21832E007D3019 /* GoogleMapsExample */;
 			targetProxy = 1610FA151E21832E007D3019 /* PBXContainerItemProxy */;
 		};
 		1610FA211E21832E007D3019 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1610F9FF1E21832E007D3019 /* AlamofireExample */;
+			target = 1610F9FF1E21832E007D3019 /* GoogleMapsExample */;
 			targetProxy = 1610FA201E21832E007D3019 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -515,7 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AA.AlamofireExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlamofireExample.app/AlamofireExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleMapsExample.app/GoogleMapsExample";
 			};
 			name = Debug;
 		};
@@ -530,7 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AA.AlamofireExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlamofireExample.app/AlamofireExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleMapsExample.app/GoogleMapsExample";
 			};
 			name = Release;
 		};
@@ -565,7 +568,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1610F9FB1E21832E007D3019 /* Build configuration list for PBXProject "AlamofireExample" */ = {
+		1610F9FB1E21832E007D3019 /* Build configuration list for PBXProject "GoogleMapsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1610FA261E21832E007D3019 /* Debug */,
@@ -574,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1610FA281E21832E007D3019 /* Build configuration list for PBXNativeTarget "AlamofireExample" */ = {
+		1610FA281E21832E007D3019 /* Build configuration list for PBXNativeTarget "GoogleMapsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1610FA291E21832E007D3019 /* Debug */,
@@ -583,7 +586,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1610FA2B1E21832E007D3019 /* Build configuration list for PBXNativeTarget "AlamofireExampleTests" */ = {
+		1610FA2B1E21832E007D3019 /* Build configuration list for PBXNativeTarget "GoogleMapsExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1610FA2C1E21832E007D3019 /* Debug */,
@@ -592,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1610FA2E1E21832E007D3019 /* Build configuration list for PBXNativeTarget "AlamofireExampleUITests" */ = {
+		1610FA2E1E21832E007D3019 /* Build configuration list for PBXNativeTarget "GoogleMapsExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1610FA2F1E21832E007D3019 /* Debug */,
